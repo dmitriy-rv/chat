@@ -113,8 +113,8 @@ function show(data, nikGet, mod){
 
 function changeNik(nik,nikGet, text){
 //Функция отрисовки ника, если встречаетс в тексте
-  var regNikSend = new RegExp('(^|\\s)'+nik+'(?=\\s|$)', 'gi');
-  var regNikGet = new RegExp('(^|\\s)'+nikGet+'(?=\\s|$)', 'gi');
+  var regNikSend = new RegExp('(^|\\s)'+nik+'(?=\\s|[.,!?]|$)', 'gi');
+  var regNikGet = new RegExp('(^|\\s)'+nikGet+'(?=\\s|[.,!?]|$)', 'gi');
   
   if (nik == ''){
   //Если сосед не ввел ник, то не ищем его
@@ -135,7 +135,7 @@ function showSmiles(text){
     ':*':'kiss',
   };
 
-  return text.replace(/(:\))|(:\()+|(:'\()+|(;\))+|(:\*)+/g, function (match) {
+  return text.replace(/(:\))|(:\()|(:'\()|(;\))|(:\*)/g, function (match) {
     return '<div class="smilies '+smilies[match]+'"></div>';
   });
 }
