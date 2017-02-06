@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html  ng-app="app">
 <head lang="ru">
     <meta charset="UTF-8">
     <title>Чат</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body  ng-controller="MainCtrl as main">
 	<h1>Пользователь 2</h1>
 	<label for="nickname">Ваш ник:</label><br/>
-	<input type="text" name="nickname" id="nickname"><br>
+	<input type="text" ng-model="main.nickname" ng-blur="main.sendNik()" name="nickname"><br>
 	<div id="text">
 		
 	</div>
 	<label for="message">Введите сообщение</label><br/>
-	<textarea name="message" id="message" cols="30" rows="4"></textarea><br>
-	<div id="button" class="button">
+	<textarea name="message" ng-change="main.changeButton()" ng-model="main.message" cols="30" rows="4"></textarea><br>
+	<div id="button" class="button" ng-class="{ 'active': main.activeButton}" ng-click="main.send(main.getNik)">
 		Отправить
 	</div>
+	<script src="js/angular.js"></script>
 	<script src="js/frame.js"></script>
 </body>
 </html>
