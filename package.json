@@ -1,0 +1,21 @@
+{
+  "name": "roox",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "",
+    "gulp-imagemin": "",
+    "gulp-csso": "",
+    "gulp-rigger": "",
+    "gulp-sass": "",
+    "gulp-sourcemaps": "",
+    "gulp-uglify": "",
+    "gulp-watch": "",
+    "imagemin-pngquant": "",
+    "rimraf": ""
+  }
+}

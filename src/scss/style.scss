@@ -1,0 +1,90 @@
+//= normalize.scss
+
+body{
+	padding: 15px;
+}
+
+.button{
+	width: 100px;
+	height: 30px;
+	float: right;
+	background-color: grey;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	transition-duration: 0.3s;
+	margin-top: 10px;
+  margin-right: 65px;
+}
+
+.active{
+	background-color: blue;
+}
+
+textarea{
+	width: 400px;
+}
+
+#text{
+	width: 400px;
+	height: 300px;
+	border: 1px solid blue;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	overflow: auto;
+}
+
+.alert{
+	margin: 5px;
+	padding: 7px;
+	&.send{
+		background-color: #eaeaea;
+	}
+
+	&.get{
+		background-color: #9ee6dc;
+	}
+	.nik{
+		font-weight: bold;
+
+	}
+}
+
+.nikSend{
+	font-weight: bold;
+	color: red;
+}
+
+.nikGet{
+	font-weight: bold;
+	color: blue;
+}
+
+.smilies{
+	background-image: url("../img/smilies.png");
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+
+.smile{
+	background-position: 0px 0px;
+}
+
+.cry{
+	background-position: -40px -84px;
+}
+
+.sad{
+	background-position: -40px -42px;
+}
+
+.wink{
+	background-position: -60px -21px;
+}
+
+.kiss{
+	background-position: -60px -84px;
+}

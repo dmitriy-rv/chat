@@ -1,0 +1,11 @@
+{
+  "name": "roox",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "",
+    "gulp": "^3.8.11"
+  }
+}
